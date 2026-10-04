@@ -540,6 +540,7 @@ Student: teach me fractions
 |---|---|
 | ![CLI](docs/screenshots/07-cli.png) | ![Tests](docs/screenshots/08-tests.png) |
 
+### Demo Video
 > Demo video (3 to 5 minutes): [Watch the demo video](https://drive.google.com/file/d/18-VSJO2wC6HE59OAKHZIfVM8XL5ZE_hr/view?usp=sharing)
 
 ## Logging and debugging
