@@ -1,0 +1,37 @@
+[project]
+name = "leo-ai-tutor"
+version = "1.0.0"
+description = "Leo: a multi-agent AI tutor built with CrewAI (Coordinator, Explainer, Quiz Master, Evaluator)"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+license = { text = "MIT" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra -q"
+markers = [
+    "slow: imports CrewAI (takes a while on the first run)",
+    "ui: headless Streamlit test",
+]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = ["data", "logs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B"]
+ignore = ["E501", "B008"]        # line length is handled by black
+
+[tool.ruff.lint.per-file-ignores]
+"app.py" = ["E402"]              # Streamlit requires set_page_config() before other imports
+"tests/conftest.py" = ["E402"]   # env vars must be set before importing leo
+
+[tool.ruff.lint.isort]
+known-first-party = ["leo"]

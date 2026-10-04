@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Leo: Multi-Agent AI Tutor">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="55%" stop-color="#0984E3"/>
+      <stop offset="100%" stop-color="#00B894"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" rx="24" fill="url(#bg)"/>
+  <circle cx="90" cy="60" r="70" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1130" cy="250" r="95" fill="#ffffff" opacity="0.08"/>
+  <circle cx="1010" cy="40" r="40" fill="#ffffff" opacity="0.06"/>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" text-anchor="middle" fill="#ffffff">
+    <text x="600" y="112" font-size="72" font-weight="700">🦁 Leo</text>
+    <text x="600" y="156" font-size="26">A multi-agent AI tutor that plans, teaches, quizzes and gives feedback</text>
+    <text x="600" y="188" font-size="18" opacity="0.9">Built with CrewAI · Free-tier LLMs · Pydantic · Streamlit</text>
+    <rect x="130" y="212" width="200" height="44" rx="22" fill="#ffffff" opacity="0.2"/>
+    <rect x="380" y="212" width="200" height="44" rx="22" fill="#ffffff" opacity="0.2"/>
+    <rect x="630" y="212" width="200" height="44" rx="22" fill="#ffffff" opacity="0.2"/>
+    <rect x="880" y="212" width="200" height="44" rx="22" fill="#ffffff" opacity="0.2"/>
+    <text x="230" y="241" font-size="20" font-weight="600">🧭 Coordinator</text>
+    <text x="480" y="241" font-size="20" font-weight="600">📖 Explainer</text>
+    <text x="730" y="241" font-size="20" font-weight="600">📝 Quiz Master</text>
+    <text x="980" y="241" font-size="20" font-weight="600">✅ Evaluator</text>
+    <text x="355" y="242" font-size="26">→</text>
+    <text x="605" y="242" font-size="26">→</text>
+    <text x="855" y="242" font-size="26">→</text>
+  </g>
+</svg>

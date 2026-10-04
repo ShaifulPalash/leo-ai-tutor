@@ -1,0 +1,39 @@
+# ---------- Secrets (NEVER commit) ----------
+.env
+.env.*
+!.env.example
+
+# ---------- Virtual environments ----------
+.venv/
+venv/
+env/
+
+# ---------- Python artifacts ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---------- Leo runtime data ----------
+# Keep the folder (via .gitkeep) but ignore its contents
+logs/*
+!logs/.gitkeep
+data/
+*.db
+*.sqlite3
+leo_memory.json
+
+# ---------- Streamlit ----------
+.streamlit/secrets.toml
+
+# ---------- Editors / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
